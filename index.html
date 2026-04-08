@@ -1,10 +1,51 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Doação de sangue</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main>
+        <h1>Doe sangue!</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="idade">Data de nascimento</label>
+        <input type="date" id="nascimento" required>
+
+        <label for="peso">Peso</label>
+        <input type="number" id="peso" required>
+
+        <label for="tipo">Tipo sanguíneo</label>
+        <br>
+        <select name="escolhas" id="tipo" required>
+            <option value="opção1"></option>
+            <option value="tipo1">A+</option>
+            <option value="tipo2">A-</option>
+            <option value="tipo3">B+</option>
+            <option value="tipo4">B-</option>
+            <option value="tipo5">AB+</option>
+            <option value="tipo6">AB-</option>
+            <option value="tipo7">O+</option>
+            <option value="tipo8">O-</option>
+        </select>
+
+          <label for="telefone">Telefone</label>
+        <input type="number" id="telefone" required>
+
+         <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" required>
+
+         <label for="estado">Estado</label>
+        <input type="text" id="estado" required>
+    </main>
 </body>
+
 </html>
