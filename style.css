@@ -23,9 +23,9 @@ h1 {
 .resultado {
      display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 20px;
-    padding: 20px;
     background-color: rgba(122, 0, 0, 0.541);
-    border-radius: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    padding: 20px;
 }

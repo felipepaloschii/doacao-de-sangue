@@ -1,11 +1,11 @@
-document.getElementById("FormDoacao").addEventListener("submit", function (e) {
+document.getElementById("formDoacao").addEventListener("submit", function (e) {
     e.preventDefault();
 
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
     let idade = document.getElementById("idade").value;
     let peso = document.getElementById("peso").value;
-    let tipo = document.querySelector('input[nome="tipo"]checked').value ;
+    let tipo = document.getElementById ("tipo").value ;
     let telefone = document.getElementById("telefone").value;
     let cidade = document.getElementById("cidade").value;
     let estado = document.getElementById("estado").value;
@@ -13,7 +13,8 @@ document.getElementById("FormDoacao").addEventListener("submit", function (e) {
     let sobrenome = nome.trim().split(/\s+/);
 
     if (sobrenome.length < 2) {
-        alert ("Por favor, digite seu nome e sobrenome");
+        return alert ("Por favor, digite seu nome e sobrenome");
+        
     }
     if (!email.includes("@")|| !email.includes(".")) {
         return alert ("Email Inválido! Deve conter @.....com");
@@ -30,10 +31,10 @@ document.getElementById("FormDoacao").addEventListener("submit", function (e) {
     resultado.style.display = "block";
     resultado.innerHTML =
     "Cadastro realizado com sucesso!" + "<br>" +
-    "Nome: " + nome + "<br>"
-    "Email: " + email + "<br>"
-    "Idade: " + idade + "<br>"
-    "Telefone: " + telefone + "<br>"
-    "Cidade: " + cidade + "<br>"
+    "Nome: " + nome + "<br>" +
+    "Email: " + email + "<br>" +
+    "Idade: " + idade + "<br>" +
+    "Telefone: " + telefone + "<br>" +
+    "Cidade: " + cidade + "<br>" +
     "Estado: " + estado;
 });
